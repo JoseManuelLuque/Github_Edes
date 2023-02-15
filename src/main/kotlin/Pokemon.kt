@@ -1,6 +1,4 @@
-import java.lang.invoke.StringConcatFactory
-
-class Pokemon(id: Int, nombre: String, vida: Int, tipo: String) {
+class Pokemon(id: Int, nombre: String, vida: Int, tipo: Tipo) {
 
     var id: Int = 0
         set(value) {
@@ -20,7 +18,7 @@ class Pokemon(id: Int, nombre: String, vida: Int, tipo: String) {
             field = value
         }
 
-    var tipo: String = ""
+    var tipo: Tipo = Tipo("")
     init {
         this.id = id
         this.nombre = nombre

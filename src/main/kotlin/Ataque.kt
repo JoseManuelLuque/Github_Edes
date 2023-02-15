@@ -1,8 +1,8 @@
-class Ataque(nombre: String, tipo: String, fuerza: Int) {
+class Ataque(nombre: String, tipo: Tipo, fuerza: Int) {
 
     var nombre: String = ""
 
-    var tipo: String = ""
+    var tipo: Tipo = Tipo("")
 
     var fuerza: Int = 0
         set(value) {
